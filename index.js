@@ -1,4 +1,4 @@
-import EasyPhotoSwiper from './easyphotoswiper'
+import EasyPhotoSwiper from './lib/easyPhotoSwiper'
 
 const PhotoGallery = new EasyPhotoSwiper({
   wrap: '.js-gallery',
