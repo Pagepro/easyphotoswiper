@@ -1,6 +1,6 @@
 {
   "name": "easyphotoswiper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Easy way to include photoSwiper on your website.",
   "main": "./lib/easyPhotoSwiper.js",
   "scripts": {
@@ -32,6 +32,12 @@
     "url": "https://github.com/Pagepro/easyphotoswiper/issues"
   },
   "homepage": "https://github.com/Pagepro/easyphotoswiper#readme",
+  "dependencies": {
+    "jquery": "1.12.3",
+    "mocha": "^3.0.2",
+    "photoswipe": "^4.1.1",
+    "query-string": "^4.2.3"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
@@ -48,10 +54,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
     "istanbul": "^1.0.0-alpha",
-    "jquery": "1.12.3",
     "mocha": "^3.0.2",
-    "photoswipe": "^4.1.1",
-    "query-string": "^4.2.3",
     "rimraf": "^2.5.4",
     "webpack": "1.12.14"
   },
