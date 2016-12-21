@@ -30,7 +30,7 @@
     "jquery": "1.12.3",
     "photoswipe": "^4.1.1",
     "query-string": "^4.2.3",
-    "webpack": "1.12.14",
+    "webpack": "1.12.14"
   },
   "browser": {
     "PhotoSwipeUIDefault": "./node_modules/photoswipe/dist/photoswipe-ui-default.js"
