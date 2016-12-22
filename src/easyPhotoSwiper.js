@@ -22,7 +22,7 @@ export default class EasyPhotoSwiper {
     // loop through all gallery elements and bind events
     const galleryElements = document.querySelectorAll(wrap)
 
-    galleryElements.forEach((galeryElement, i) => {
+    Array.from(galleryElements).forEach((galeryElement, i) => {
       galeryElement.setAttribute('data-pswp-uid', i + 1)
       $(galeryElement).find(this.link).on('click', (e) => {
         e.preventDefault()
