@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import PhotoSwipe from 'PhotoSwipe'
-import PhotoSwipeUIDefault from 'PhotoSwipeUIDefault'
+import PhotoSwipeUIDefault from '../default-ui/photoswipe-ui-default.js'
 import queryString from 'query-string'
 
 export default class EasyPhotoSwiper {

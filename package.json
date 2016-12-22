@@ -1,21 +1,24 @@
 {
   "name": "easyphotoswiper",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easy way to include photoSwiper on your website.",
   "main": "./lib/easyPhotoSwiper.js",
   "scripts": {
+    "copy-ui": "rm -r default-ui && mkdir default-ui && cp node_modules/photoswipe/dist/photoswipe-ui-default.js default-ui/",
+    "copy-css": "cp node_modules/photoswipe/dist/photoswipe.css default-ui/",
     "clean": "rimraf lib",
     "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --recursive",
     "test:watch": "npm test -- --watch",
     "test:examples": "node examples/",
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
     "lint": "eslint src test",
-    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build": "npm run copy-ui && npm run copy-css && cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "prepublish": "npm run clean && npm run build"
   },
   "files": [
     "lib",
-    "src"
+    "src",
+    "default-ui"
   ],
   "repository": {
     "type": "git",
@@ -59,6 +62,6 @@
     "webpack": "1.12.14"
   },
   "browser": {
-    "PhotoSwipeUIDefault": "./node_modules/photoswipe/dist/photoswipe-ui-default.js"
+    "PhotoSwipeUIDefault": "./lib/photoswipe/dist/photoswipe-ui-default.js"
   }
 }
