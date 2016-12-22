@@ -26,11 +26,13 @@ const PhotoGallery = new EasyPhotoSwiper({
 PhotoGallery.init()
 ```
 
-4. Import styles in your SCSS files:
+4. Import styles in your SCSS files and setup $images_url variable:
 
 ```scss
+$images_url: '../img/';
 @import "node_modules/easyphotoswiper/src/easyphotoswiper";
 ```
+
 5. Grab images and save them in your images folder (src/img):
 
 https://raw.githubusercontent.com/dimsemenov/PhotoSwipe/master/dist/default-skin/default-skin.svg

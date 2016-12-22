@@ -1,6 +1,6 @@
 {
   "name": "easyphotoswiper",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Easy way to include photoSwiper on your website.",
   "main": "./lib/easyPhotoSwiper.js",
   "scripts": {
