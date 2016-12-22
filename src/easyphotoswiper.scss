@@ -1,3 +1,4 @@
 @import '../default-ui/photoswipe';
-@import '../default-ui/defaultskin';
 
+$images_url: '../img/' !default;
+@import 'pagepro-skin';
