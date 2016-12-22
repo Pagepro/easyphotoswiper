@@ -1,11 +1,11 @@
 {
   "name": "easyphotoswiper",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Easy way to include photoSwiper on your website.",
   "main": "./lib/easyPhotoSwiper.js",
   "scripts": {
     "copy-ui": "rm -r default-ui && mkdir default-ui && cp node_modules/photoswipe/dist/photoswipe-ui-default.js default-ui/",
-    "copy-css": "cp node_modules/photoswipe/dist/photoswipe.css default-ui/",
+    "copy-css": "cp node_modules/photoswipe/dist/photoswipe.css default-ui/ && cp node_modules/photoswipe/dist/default-skin/default-skin.css default-ui/",
     "clean": "rimraf lib",
     "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --recursive",
     "test:watch": "npm test -- --watch",
