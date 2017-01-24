@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import PhotoSwipe from 'PhotoSwipe'
+import PhotoSwipe from 'photoswipe'
 import PhotoSwipeUIDefault from '../default-ui/photoswipe-ui-default.js'
 import queryString from 'query-string'
 
